@@ -1,6 +1,6 @@
 # Recall
 
-[Open Recall](https://rualark.github.io/recall)
+[Open Recall](https://rualark.github.io/Recall)
 
 Recall is an innovative system that secures your sensitive information, like passwords,
 by leveraging personal associations unique to your mind instead of traditional authentication methods
