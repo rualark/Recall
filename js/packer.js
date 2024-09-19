@@ -1,5 +1,6 @@
 import {encrypt} from "./aes.js";
-import {groupsAndSecrets, groupsToString, hashSHA256} from "./data.js";
+import {groupsAndSecrets, groupsToString} from "./data.js";
+import {hashSHA256} from "./hash.js";
 
 function shufflePairs(groups) {
   return groups.map(group => {
