@@ -21,7 +21,7 @@ for example matching the names of your favorite games to unique descriptions onl
 These unique associations become the key to unlock your encrypted data, ensuring only you can access it.
 It’s a password method tailored specifically to how your mind naturally works.
 
-## Technology
+## Technical details
 
 For instance, you might describe 30 of your favorite games, with each game name paired with a unique description. These associations form the foundation of the encryption process.
 
