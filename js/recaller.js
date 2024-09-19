@@ -134,7 +134,7 @@ async function scan() {
 }
 
 function init() {
-  document.getElementById('packed').onchange = function() {
+  document.getElementById('unpack').onclick = function() {
     unpack();
   }
 
