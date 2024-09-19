@@ -1,4 +1,5 @@
 import {decrypt} from "./aes.js";
+import {initSearch} from "./search.js";
 import {parseGroups, groupsToString, getUrlParam, updateGroups, sortAnswers} from "./data.js";
 import {hashSHA256} from "./hash.js";
 import {nextPermutation, answersHaveDuplicates} from "./permutations.js";
@@ -83,7 +84,8 @@ async function checkPermutation(permutation, answers, packed, finished) {
         unpack();
       } else {
         document.getElementById('secret').value = decrypted;
-        document.body.style.backgroundColor = '#77ff77';
+        document.querySelectorAll('.column1').forEach(
+          el => el.style.backgroundColor = '#77ff77');
       }
     }
   } catch (error) {
@@ -144,6 +146,7 @@ function init() {
 
   unpack();
   scan();
+  initSearch();
 }
 
 init();

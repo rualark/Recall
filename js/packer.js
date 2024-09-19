@@ -23,6 +23,7 @@ async function pack() {
   const { groups, secrets } = groupsAndSecrets(document.getElementById('secret').value.trim());
   let res = secrets.join('\n');
   for (let i = groups.length - 1; i >= 0; i--) {
+    document.getElementById('packed').value = `Encrypting layer ${i + 1}...`;
     const group = groups[i];
     const shuffled = shufflePairs([group]);
     const shuffled_str = groupsToString(shuffled);
