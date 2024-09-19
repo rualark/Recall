@@ -61,3 +61,11 @@ Keep in mind that the more answers you add to each question, the longer it will 
 
 You can also create multiple groups of associations. Each group encrypts the next group, meaning you'll need to answer the first group’s questions correctly before gaining access to the next set of questions.
 
+## Recall message format explained
+
+When Recall encrypts your secrets with your associations, it outputs the colon-separated Base64-encoded message like this:
+
+RECALL:COMPRESSED_RANDOMLY_SHUFFLED_ASSOCIATIONS:ENCRYPTED_SECRET:SECRET_HASH:DATE
+                
+Keep in mind that the encrypted secret can be another recall message of this format -
+if you have multiple groups of associations.
