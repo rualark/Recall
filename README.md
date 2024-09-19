@@ -21,6 +21,33 @@ for example matching the names of your favorite games to unique descriptions onl
 These unique associations become the key to unlock your encrypted data, ensuring only you can access it.
 It’s a password method tailored specifically to how your mind naturally works.
 
+## Why Recall is safe
+
+- **Open Source**: Recall is fully open source and available on GitHub, so you can inspect, verify, and even contribute to the code yourself.
+
+- **No Data Storage**: Recall is a fully static application. It doesn’t use any storage or databases, meaning it never stores any of your data, ever.
+
+- **Run It Anywhere**: For added security, you can download Recall and run it on your own hosting or even locally on your computer.
+
+- **Strong Encryption**: Recall uses AES-256 encryption, a standard for maximum data protection. It also employs PBKDF2 key derivation to prevent brute-force attacks, ensuring that your secrets are safe even against the most determined threats.
+
+## How to Create Secure Associations
+
+Creating strong, safe associations is the key to Recall's security. Here’s how to make sure your associations are secure:
+
+- **Use at least 17 associations in one group.** This provides strong protection because brute-forcing through 17 associations results in 17! (factorial) combinations—an impractically large number to crack.
+  
+- **Keep your associations personal.** Only you should know them. Make sure they're private and unique to you.
+  
+- **Ensure answers fit well for every question.** Avoid clues that give away obvious context. For example, if the question clearly refers to a man or woman, don't mix genders in the same group, as it makes the associations easier to guess.
+  
+- **Avoid recent memories.** Try not to use memories from the last 2-5 years, as they may fade more quickly over time.
+  
+- **Choose emotionally charged memories.** Memories tied to strong emotions tend to stick with you longer, making them harder to forget.
+
+If your primary associations contain sensitive information you’d rather not reveal, you can create multiple groups.
+Use simpler, less sensitive associations to protect the more critical information in the next group.
+
 ## Technical details
 
 For instance, you might describe 30 of your favorite games, with each game name paired with a unique description. These associations form the foundation of the encryption process.
@@ -33,4 +60,3 @@ Keep in mind that the more answers you add to each question, the longer it will 
 
 You can also create multiple groups of associations. Each group encrypts the next group, meaning you'll need to answer the first group’s questions correctly before gaining access to the next set of questions.
 
-Recall uses AES-256 encryption for maximum data protection. To defend against brute-force attacks, the key derivation process is strengthened using the PBKDF2 algorithm. This ensures that your secrets remain secure even against determined attackers.
