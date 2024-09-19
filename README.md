@@ -10,7 +10,8 @@ Recall doesn't replace traditional authentication methods but adds an extra laye
 You can encrypt your master passwords with Recall as a backup for emergencies,
 while continuing to use traditional methods for daily access.
 
-Recall is not quick - it will take 5-20 minutes to securely input your associations (depending on how secure you want it to be).
+Recall is not quick - it will take 5-20 minutes to securely input your associations
+and decrypt your secrets (depending on how secure you want it to be).
 Therefore, it's typically used in emergencies, such as when you've forgotten your master passwords.
 
 ## How it works
