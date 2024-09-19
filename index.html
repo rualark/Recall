@@ -1,26 +1,50 @@
-<b>Packer</b> |
-<a href="recaller.html"><b>Recaller</b></a>
-<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recall - Encrypt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Recall</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Encrypt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="decrypt.html">Decrypt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<p>Create associative pairs to secure your secrets.
-Each associative pair starts with a ? symbol, where the question (or clue) is
-on the right and the answer is on the left, separated by an =.
+    <div class="container py-5">
+        <div class="mb-4">
+            <h1 class="fw-bold text-primary">Encrypt the secret</h1>
+        </div>
 
-<p>If you want to create layers of protection, separate groups of associative
-pairs with ---. This will ensure that the next group of questions is only
-accessible after correctly solving the previous group.
+        <hr class="my-4">
 
-<p>To ensure your password is robust, aim for at least 15 elements in one
-of the groups. Make sure the answers are not too obvious, and that all
-choices seem equally plausible for each question, making it harder for anyone to guess.
+        <!-- Description Section -->
+        <p>Create associative pairs to secure your secrets. Each associative pair starts with a <code>?</code> symbol, where the question (or clue) is on the right and the answer is on the left, separated by <code>=</code>.</p>
+        <p>If you want to create layers of protection, separate groups of associative pairs with <code>---</code>. This will ensure that the next group of questions is only accessible after correctly solving the previous group.</p>
+        <p>To ensure your password is robust, aim for at least 15 elements in one of the groups. Make sure the answers are not too obvious, and that all choices seem equally plausible for each question, making it harder for anyone to guess.</p>
+        <p>Any line that doesn't start with a <code>?</code> is your secret information (like passwords) that Recall will encrypt for you.</p>
+        <p><a target=_blank href="https://github.com/rualark/Recall">Read more</a></p>
 
-<p>Any line that doesn't start with a ? is your secret information
-(like passwords) that Recall will encrypt for you.
-
-<p><a target=_blank href="https://github.com/rualark/Recall">Read more</a></p>
-
-<h4>Secret:</h4>
-<textarea style="width: 100%" rows=40 id=secret>
+        <!-- Secret Section -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h4 class="card-title text-secondary">Secret:</h4>
+                <textarea style="width: 100%" class="form-control mb-3" rows="30" id="secret">
 MySecretPassword
 AnotherVerySecretPassword
 
@@ -38,11 +62,21 @@ AnotherVerySecretPassword
 ? Sydney = A cockatoo stole my sandwich in Hyde Park.
 ? Cairo = A camel wandered into my wedding photo.
 ? Rio de Janeiro = I got stuck mid-parade in Carnival feathers.
-</textarea>
-<button id="pack">Pack</button>
+                </textarea>
+                <button id="pack" class="btn btn-primary w-100">Pack</button>
+            </div>
+        </div>
 
-<h4>Packed:</h4>
-<textarea style="width: 100%" rows=10 id=packed></textarea>
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title text-secondary">Encrypted:</h4>
+                <textarea class="form-control" rows="5" id="packed"></textarea>
+            </div>
+        </div>
+    </div>
 
-<script type='text/javascript' src='plugins/lz-string-1.4.4/lz-string.min.js'></script>
-<script type=module src=js/packer.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type='text/javascript' src='plugins/lz-string-1.4.4/lz-string.min.js'></script>
+    <script type=module src=js/packer.js></script>
+</body>
+</html>

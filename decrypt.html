@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recall - Decrypt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/recaller.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Recall</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Encrypt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="decrypt.html">Decrypt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="mb-4">
+            <h1 class="fw-bold text-primary">Decrypt the secret</h1>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h4 class="card-title text-secondary">Paste packed data:</h4>
+                <textarea style="width: 100%" class="form-control mb-3" rows="5" id="packed">
+RECALL:PwAg6g8mILwgsgTxAMwIYDcD2AnAlgC4CmIA5mgLYkDuAFkQHYgCSI1aAziAIwBMAdAChBoADJE0pAK4ksKEONKMAJlzhJUeHBwIgOtLFmI4ylIkJEJcBNABsQAaSwUARml1xWDIhiImADrZoiETKIAS0eFzkVBag8HjeAMY4aCgeLCBYDEkkLlJ4trpoZHhoDLq2QRQlKNZxIABi1gyEJHAQOSSspEYgtlg6IFIMyn6kOFgjygA0bIS0IAxY4bhJ9BwNACKGFCC8sJkcWAOhIABCaJNM5WF1OL26BCv+iaT8QA=:2ebk6FIQcAE6unr0XS94CBzrBwy5ZC9zeEbAO4Bn+vJ3XVfjS/f+6sy1D41LKMy2FvczzC7AM8JaxflN+j5xGjOejrGLR5K+eroLt4ae6Uma0LUHGFvzMML1HXMW5Bo+6OZUEJ/WpsIoyHFlV6LWUi0DRLM0gvL+SondlAX2cTfLWkeFKh94Q9ZWWPUSfAeSxsTylnofJOC2wJmIkBa8ryDd1uuTvgtQ4FAinHwhd5eyCfPLyOY3eCzKx0lU43CU1Ryum2Is3txk1vxWQ2b/51oxV3uiK5symrWf82igVsV8HFFNSNKxQMcXBHgi+vW+L7OOfGI9gFuoJgGyvrHgbZYr2DSr63y7BMhBiaUeOsQmHnEzKOkH22M8X3jV1HhLqh6JFg5NBtSg0UnXdU76foVjzslNwLhV9wSfZpApmwH1qK3+96/XkTQbNpRtrY9M7uXppMrt0dlkfz/x2fppf3RtIWCNcMwr7bqpEWlgex50jzoX10N8PtEpzPDAh+w8l0bp8wNuHuDgq2yz3qMg0Xvf80mxRq1jv1SAB8u6LS58o3dOyp/8NUvIXoAcjdBcOhRtDFbPBTs8SJNnq1u2qcTkljFExTA6JcgnaN/Iy4DvMALyaPzJ/0cW8IkQca+C7CvSZnehk/Itwaf1yqMUjLSz5i3rL4Oc9wABHgX+eiY2LP4iopQdfPOpwz0ez2iuehsXgwBThh6qWcZkzXTQve1skDPF3HICrEYre11F4kYLm236vnTzPFlPDfG4kSoMVYN9D+GCpGwPhXDpKDfHeR4JyCiKV33v5CIL5USUenPFgW+B5Rxh08rXGOiIqE+xT2EyK49hocshRBsoVTyovr1T+SElG6GdJHjrr2N/U9M=:fb5dac2624686baf6d991a32d5992e94699d3ced89575c30f77d6fb322c1ec0a:2024-09-18T23:22:41.349Z
+                </textarea>
+                <button id="pack" class="btn btn-primary w-100">Unpack</button>
+            </div>
+        </div>
+
+        <p>Solve the puzzle by clicking answers in the third column and then empty cells in the second column:
+        <p>You can put more then one answer to one question, then all possible combinations of your answers will be scanned.
+
+        <div style="display: flex; justify-content: center">
+            <div style="display: flex" id="main-container"></div>
+        </div>
+        <div id="scan-progress"></div><br>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title text-secondary">Decrypted:</h4>
+                <textarea style="width: 100%" class="form-control" rows="12" id="secret"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type='text/javascript' src='plugins/lz-string-1.4.4/lz-string.min.js'></script>
+    <script type=module src=js/recaller.js></script>
+</body>
+</html>
