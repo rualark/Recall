@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="css/recaller.css">
+
+<a href="index.html"><b>Packer</b></a> |
+<b>Recaller</b>
+<hr>
+
+<h4>Paste packed data:</h4>
+<textarea style="width: 100%" rows=5 id=packed>
+RECALL:PwAg6g8mILwgsgTxAMwIYDcD2AnAlgC4CmIA5mgLYkDuAFkQHYgCSI1aAziAIwBMAdAChBoADJE0pAK4ksKEONKMAJlzhJUeHBwIgOtLFmI4ylIkJEJcBNABsQAaSwUARml1xWDIhiImADrZoiETKIAS0eFzkVBag8HjeAMY4aCgeLCBYDEkkLlJ4trpoZHhoDLq2QRQlKNZxIABi1gyEJHAQOSSspEYgtlg6IFIMyn6kOFgjygA0bIS0IAxY4bhJ9BwNACKGFCC8sJkcWAOhIABCaJNM5WF1OL26BCv+iaT8QA=:2ebk6FIQcAE6unr0XS94CBzrBwy5ZC9zeEbAO4Bn+vJ3XVfjS/f+6sy1D41LKMy2FvczzC7AM8JaxflN+j5xGjOejrGLR5K+eroLt4ae6Uma0LUHGFvzMML1HXMW5Bo+6OZUEJ/WpsIoyHFlV6LWUi0DRLM0gvL+SondlAX2cTfLWkeFKh94Q9ZWWPUSfAeSxsTylnofJOC2wJmIkBa8ryDd1uuTvgtQ4FAinHwhd5eyCfPLyOY3eCzKx0lU43CU1Ryum2Is3txk1vxWQ2b/51oxV3uiK5symrWf82igVsV8HFFNSNKxQMcXBHgi+vW+L7OOfGI9gFuoJgGyvrHgbZYr2DSr63y7BMhBiaUeOsQmHnEzKOkH22M8X3jV1HhLqh6JFg5NBtSg0UnXdU76foVjzslNwLhV9wSfZpApmwH1qK3+96/XkTQbNpRtrY9M7uXppMrt0dlkfz/x2fppf3RtIWCNcMwr7bqpEWlgex50jzoX10N8PtEpzPDAh+w8l0bp8wNuHuDgq2yz3qMg0Xvf80mxRq1jv1SAB8u6LS58o3dOyp/8NUvIXoAcjdBcOhRtDFbPBTs8SJNnq1u2qcTkljFExTA6JcgnaN/Iy4DvMALyaPzJ/0cW8IkQca+C7CvSZnehk/Itwaf1yqMUjLSz5i3rL4Oc9wABHgX+eiY2LP4iopQdfPOpwz0ez2iuehsXgwBThh6qWcZkzXTQve1skDPF3HICrEYre11F4kYLm236vnTzPFlPDfG4kSoMVYN9D+GCpGwPhXDpKDfHeR4JyCiKV33v5CIL5USUenPFgW+B5Rxh08rXGOiIqE+xT2EyK49hocshRBsoVTyovr1T+SElG6GdJHjrr2N/U9M=:fb5dac2624686baf6d991a32d5992e94699d3ced89575c30f77d6fb322c1ec0a:2024-09-18T23:22:41.349Z
+</textarea>
+
+<h4>Solve puzzle by clicking answers in the third column and then empty cells in the second column:</h4>
+You can put more then one answer to one question, then all possible combinations of your answers will be scanned.
+<div style="display: flex" id="main-container"></div>
+<div id="scan-progress"></div>
+
+<h4>Decrypted:</h4>
+<textarea style="width: 100%" rows=12 id=secret></textarea>
+
+<script type='text/javascript' src='plugins/lz-string-1.4.4/lz-string.min.js'></script>
+<script type=module src=js/recaller.js></script>

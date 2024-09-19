@@ -1,0 +1,45 @@
+.column1 {
+  min-width: 200px;
+  min-height: 200px;
+  padding: 2px;
+  margin: 3px;
+  border: 1px solid #ccc;
+}
+
+.column2 {
+  min-width: 190px;
+  min-height: 200px;
+  padding: 2px;
+  margin: 3px;
+  border: 1px solid #ccc;
+}
+
+.cell {
+  padding: 2px;
+  margin: 5px;
+  border: 1px solid #000;
+  background-color: #f0f0f0;
+  min-width: 100px;
+  min-height: 30px;
+  display: block;
+}
+
+.block {
+  padding: 5px;
+  margin: 3px;
+  border: 1px solid #000;
+  background-color: #d0d0d0;
+  cursor: grab;
+  display: block;
+}
+
+.question {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #000;
+  background-color: #e0e0e0;
+  min-width: 30px;
+  min-height: 10px;
+  display: flex;
+}
+
