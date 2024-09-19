@@ -1,5 +1,7 @@
 # Recall
 
+[Open Recall](https://rualark.github.io/recall)
+
 Recall is an innovative system that secures your sensitive information, like passwords,
 by leveraging personal associations unique to your mind instead of traditional authentication methods
 (e.g., passwords, biometrics, or OTP apps).
@@ -10,8 +12,6 @@ while continuing to use traditional methods for daily access.
 
 Recall is not quick - it will take 5-20 minutes to securely input your associations (depending on how secure you want it to be).
 Therefore, it's typically used in emergencies, such as when you've forgotten your master passwords.
-
-[Open Recall](https://rualark.github.io/recall)
 
 ## How it works
 
