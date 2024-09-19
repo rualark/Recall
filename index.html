@@ -2,21 +2,22 @@
 <a href="recaller.html"><b>Recaller</b></a>
 <hr>
 
-<h4>How it works:</h4>
-The encryption key is derived based on the correct pairing. 
-The whole text is encrypted.
-The associative pairs are mixed within their groups and are not encrypted.
-You are presented with packed text containig both encrypted and unencrypted
-parts that you can safely put anywhere.
-If you want to recall or change your secrets or pairs, take your encrypted
-text and paste it into <a href=recaller.html>Recaller</a>.
+<p>Create associative pairs to secure your secrets.
+Each associative pair starts with a ? symbol, where the question (or clue) is
+on the right and the answer is on the left, separated by an =.
 
-<p>Lines starting with ? are associative pairs (separated with =).
-You can separate groups of pairs with ---, this will allow to present groups
-of pairs without mixing them.
-To have a strong associative password, ensure that you have at least 13 elements
-in at least one group and all of them seem to be equally fitting for each question.
-All other lines is just your secret information that you want to protect.
+<p>If you want to create layers of protection, separate groups of associative
+pairs with ---. This will ensure that the next group of questions is only
+accessible after correctly solving the previous group.
+
+<p>To ensure your password is robust, aim for at least 15 elements in one
+of the groups. Make sure the answers are not too obvious, and that all
+choices seem equally plausible for each question, making it harder for anyone to guess.
+
+<p>Any line that doesn't start with a ? is your secret information
+(like passwords) that Recall will encrypt for you.
+
+<p><a target=_blank href="https://github.com/rualark/Recall"></a>Read more</a></p>
 
 <h4>Secret:</h4>
 <textarea style="width: 100%" rows=40 id=secret>
