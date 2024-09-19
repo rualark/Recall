@@ -10,7 +10,8 @@ Recall doesn't replace traditional authentication methods but adds an extra laye
 You can encrypt your master passwords with Recall as a backup for emergencies,
 while continuing to use traditional methods for daily access.
 
-Recall is not quick - it will take 5-20 minutes to securely input your associations (depending on how secure you want it to be).
+Recall is not quick - it will take 5-20 minutes to securely input your associations
+and decrypt your secrets (depending on how secure you want it to be).
 Therefore, it's typically used in emergencies, such as when you've forgotten your master passwords.
 
 ## How it works
@@ -60,3 +61,14 @@ Keep in mind that the more answers you add to each question, the longer it will 
 
 You can also create multiple groups of associations. Each group encrypts the next group, meaning you'll need to answer the first group’s questions correctly before gaining access to the next set of questions.
 
+## Recall message format explained
+
+When Recall encrypts your secrets with your associations, it outputs the colon-separated Base64-encoded message like this:
+
+**RECALL:COMPRESSED_RANDOMLY_SHUFFLED_ASSOCIATIONS:ENCRYPTED_SECRET:SECRET_HASH:DATE**
+                
+Keep in mind that the encrypted secret can be another recall message of this format -
+if you have multiple groups of associations.
+
+If your assiciations are safe (see guidelines for safe associations above), it is safe to store the Recall message
+on all of your disks, storages, clouds and giving them to your friends - as only you will be able to decrypt it.
