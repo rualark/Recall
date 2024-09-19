@@ -65,7 +65,7 @@ You can also create multiple groups of associations. Each group encrypts the nex
 
 When Recall encrypts your secrets with your associations, it outputs the colon-separated Base64-encoded message like this:
 
-RECALL:COMPRESSED_RANDOMLY_SHUFFLED_ASSOCIATIONS:ENCRYPTED_SECRET:SECRET_HASH:DATE
+**RECALL:COMPRESSED_RANDOMLY_SHUFFLED_ASSOCIATIONS:ENCRYPTED_SECRET:SECRET_HASH:DATE**
                 
 Keep in mind that the encrypted secret can be another recall message of this format -
 if you have multiple groups of associations.
