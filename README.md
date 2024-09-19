@@ -69,3 +69,6 @@ When Recall encrypts your secrets with your associations, it outputs the colon-s
                 
 Keep in mind that the encrypted secret can be another recall message of this format -
 if you have multiple groups of associations.
+
+If your assiciations are safe (see guidelines for safe associations above), it is safe to store the Recall message
+on all of your disks, storages, clouds and giving them to your friends - as only you will be able to decrypt it.
