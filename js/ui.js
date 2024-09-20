@@ -1,4 +1,5 @@
 export function generateColumnsForGroup(group, clickBlock, clickCell) {
+  console.log(group.map(subArray => subArray[0]).join(','));
   // Clear the main container before generating new content
   const mainContainer = document.getElementById('main-container');
   mainContainer.innerHTML = '';
