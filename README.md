@@ -52,6 +52,12 @@ Creating strong, safe associations is the key to Recall's security. Here’s how
 
 - **Leverage LLM.** Ask LLM (like ChatGPT) if it can correctly pair your questions and answers. Then ask why it was easy to solve some of the questions - use this to remove universal hints from your questions and replace them with unique personal hints that only you know. Don't forget to shuffle the answers before sending them to LLM, to avoid leaking your associations.
 
+- **Ask your friend to try to pass your test.** Check how many correct answers they have.
+
+- **Avoid basing associations on information that hackers can have.** Social network information, music hubs, photo hubs, documents stored on your computer - all of these can be used by hackers to answer your questions if the stakes are high.
+
+- **Do not store your associations unencrypted.** - You can store the associations you are using in a secure place encrypted with a long password (e.g. Microsoft Word, TrueCrypt, VeraCrypt encryption). Don't worry about losing them. You can always get your associations from your Recall packed data as you know the answers.
+
 If your primary associations contain sensitive information you’d rather not reveal, you can create multiple groups.
 Use simpler, less sensitive associations to protect the more critical information in the next group.
 
@@ -75,7 +81,7 @@ Keep in mind that the more answers you add to each question, the longer it will 
 
 You can also create multiple groups of associations. Each group encrypts the next group, meaning you'll need to answer the first group’s questions correctly before gaining access to the next set of questions.
 
-## Recall message format explained
+## Recall packed message format explained
 
 When Recall encrypts your secrets with your associations, it outputs the colon-separated Base64-encoded message like this:
 
@@ -84,5 +90,9 @@ When Recall encrypts your secrets with your associations, it outputs the colon-s
 Keep in mind that the encrypted secret can be another recall message of this format -
 if you have multiple groups of associations.
 
+## Where to store your Recall packed messages
+
 If your assiciations are safe (see guidelines for safe associations above), it is safe to store the Recall message
-on all of your disks, storages, clouds and giving them to your friends - as only you will be able to decrypt it.
+on all of your disks, storages, clouds, usb flash and giving them to your friends - as only you will be able to decrypt it.
+
+Avoid making Recall packed messages publicly available to avoid attempts to hack them: although they are considered unhackable today, in the future the new algorithms can be developed.
