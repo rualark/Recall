@@ -46,6 +46,10 @@ Creating strong, safe associations is the key to Recall's security. Here’s how
   
 - **Choose emotionally charged memories.** Memories tied to strong emotions tend to stick with you longer, making them harder to forget.
 
+- **Multiple associations.** If you describe people that you've met, make sure to describe multiple different situations to each person, so that if you forget one situation, you can remember the other or will be able to catch the general spirit of the hint better.
+
+- **Make sure you can pass your test.** Check how difficult it is to pass your own test, and ideally do it at least once every 1-2 years. If you face difficulties, add more unique hints that only you know.
+
 If your primary associations contain sensitive information you’d rather not reveal, you can create multiple groups.
 Use simpler, less sensitive associations to protect the more critical information in the next group.
 
