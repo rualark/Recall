@@ -48,7 +48,7 @@ Creating strong, safe associations is the key to Recall's security. Here’s how
 
 - **Multiple associations.** If you describe people that you've met, make sure to describe multiple different situations to each person, so that if you forget one situation, you can remember the other or will be able to catch the general spirit of the hint better.
 
-- **Make sure you can pass your test.** Check how difficult it is to pass your own test, and ideally do it at least once every 1-2 years. If you face difficulties, add more unique hints that only you know.
+- **Make sure you can pass your test.** Check how difficult it is to pass your own test, and ideally do it at least once every 1-2 years. If you face difficulties, add more unique hints that only you know or remove/replace some questions. Only keep associations that are easy for you to remember as with time it can become more difficult to recall them.
 
 - **Leverage LLM.** Ask LLM (like ChatGPT) if it can correctly pair your questions and answers. Then ask why it was easy to solve some of the questions - use this to remove universal hints from your questions and replace them with unique personal hints that only you know. Don't forget to shuffle the answers before sending them to LLM, to avoid leaking your associations.
 
