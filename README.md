@@ -40,7 +40,7 @@ Creating strong, safe associations is the key to Recall's security. Here’s how
   
 - **Keep your associations personal.** Only you should know them. Make sure they're private and unique to you.
   
-- **Ensure answers fit well for every question.** Avoid clues that give away obvious context. For example, if the question clearly refers to a man or woman, don't mix genders in the same group, as it makes the associations easier to guess.
+- **Ensure each answer fits well for most of the questions.** Avoid clues that give away obvious context and make it clear that many of the answers will not fit this question.
   
 - **Avoid recent memories.** Try not to use memories from the last 2-5 years, as they may fade more quickly over time.
   
