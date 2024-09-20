@@ -53,6 +53,14 @@ Creating strong, safe associations is the key to Recall's security. Here’s how
 If your primary associations contain sensitive information you’d rather not reveal, you can create multiple groups.
 Use simpler, less sensitive associations to protect the more critical information in the next group.
 
+## Examples of strong assiciations
+
+All people are different, and some topics may have deeper associations for you, you can use the following list of examples for inspiration:
+
+- **People.** - People you met, what situations happened, what your feelings were about them and situations. Detailed descriptions help to make sure you don't forget.
+- **Timeline.** - Your countries, flats, jobs, projects, hobbies - ordered by the timeline. You can specify the years in the questions. Make sure you add hints to avoid ambiguity when solving the puzzle.
+- **Something your favorite.** - Games? Music? Movies? Places? Something else? Describe your unique feelings or situations around them and make sure they are personal to you. For example, don't describe what happens in the movie as it will be easy to guess for someone else.
+
 ## Technical details
 
 For instance, you might describe 30 of your favorite games, with each game name paired with a unique description. These associations form the foundation of the encryption process.
