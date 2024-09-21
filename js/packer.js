@@ -17,8 +17,6 @@ function shufflePairs(groups) {
   });
 }
 
-hashSHA256('your data').then(hash => console.log(hash));
-
 async function pack() {
   const { groups, secrets } = groupsAndSecrets(document.getElementById('secret').value.trim());
   let res = secrets.join('\n');
