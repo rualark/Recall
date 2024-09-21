@@ -22,6 +22,10 @@ Recall is not quick - it will take 5-20 minutes to securely input your associati
 and decrypt your secrets (depending on how secure you want it to be).
 Therefore, it's typically used in emergencies, such as when you've forgotten your master passwords.
 
+One of the possible uses of Recall is to encrypt the master password which is used to encrypt all other passwords
+in the password manager. This ensures flexibility as you can add and modify passwords in the passwords manager, but
+also security as the master password is encrypted with something that only you will always know:
+
 ![Recall usage](https://docs.google.com/drawings/d/1pVqhxQbIO4Niby2ipYO9HIyG3q6tSpu7igIi1SknvAE/pub?w=480&h=360)
 
 ## How it works
