@@ -7,7 +7,6 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rualark_Recall&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rualark_Recall)
 
 [![DeepSource](https://app.deepsource.com/gh/rualark/Recall.svg/?label=active+issues&show_trend=true&token=rlHWezv6AY9K9nfF3vPijtND)](https://app.deepsource.com/gh/rualark/Recall/)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/fb48881c99144f2bb87da7dbed5dfddc)](https://app.codacy.com/gh/rualark/Recall/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 [Open Recall](https://rualark.github.io/Recall)
 
