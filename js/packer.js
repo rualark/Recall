@@ -4,7 +4,7 @@ import {hashSHA256} from "./hash.js";
 
 function shufflePairs(groups) {
   return groups.map(group => {
-    let firstElements = group.map(pair => pair[0]);
+    const firstElements = group.map(pair => pair[0]);
 
     // Shuffle the second elements
     for (let i = firstElements.length - 1; i > 0; i--) {
