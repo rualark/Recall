@@ -80,7 +80,7 @@ export function getFirstColumnTexts() {
   
   firstColumnCells.forEach(cell => {
     const blocks = []
-    for (let child of cell.children) {
+    for (const child of cell.children) {
       blocks.push(child.textContent)
     }
     texts.push(blocks);
