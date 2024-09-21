@@ -116,7 +116,7 @@ export async function encrypt(password, text) {
 }
 
 export async function decrypt(password, encryptedText) {
-  console.log(password, encryptedText);
+  
   const aesCipher = new AESCipher(password);
   return await aesCipher.decrypt(encryptedText);
 }
