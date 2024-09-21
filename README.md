@@ -36,6 +36,10 @@ for example matching the names of your favorite games to unique descriptions onl
 These unique associations become the key to unlock your encrypted data, ensuring only you can access it.
 It’s a password method tailored specifically to how your mind naturally works.
 
+Did you ever want to send your password to a friend to store it in case you lost it, but you were not sure as it
+increasese the exposure of your password? Now you can encrypt your passwords with your personal associations and
+send it to your friends to make sure you never lose them.
+
 ## Why Recall is safe
 
 - **Open Source**: Recall is fully open source and available on GitHub, so you can inspect, verify, and even contribute to the code yourself.
