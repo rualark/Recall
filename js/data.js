@@ -75,7 +75,7 @@ export function updateGroups(groups, answers, permutation) {
 export function sortAnswers(groups) {
   return groups.map(group => {
     // Extract first elements from each pair
-    let firstElements = group.map(pair => pair[0]);
+    const firstElements = group.map(pair => pair[0]);
 
     // Sort the first elements in ascending order
     firstElements.sort();
