@@ -1,5 +1,5 @@
 export function initSearch() {
-  document.addEventListener('keydown', function(event) {
+  document.addEventListener('keydown', (event) => {
     // The keyCode for ` in English layout is 192
     if (event.keyCode === 192) {
         event.preventDefault();
@@ -7,6 +7,7 @@ export function initSearch() {
         document.getElementById('search').select();
     }
   });
+
   document.getElementById('search').oninput=function(){
     filterAnswers();
     filterQuestions();
