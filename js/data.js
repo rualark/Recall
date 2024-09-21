@@ -33,7 +33,7 @@ export function groupsAndSecrets(src) {
         pairs = [];
       }
     } else if (line.startsWith('? ')) {
-      let [question, answer] = line.slice(2).split('=');
+      const [question, answer] = line.slice(2).split('=');
       pairs.push([question.trim(), answer.trim()]);
     } else {
       secrets.push(line);
