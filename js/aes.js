@@ -77,7 +77,7 @@ class AESCipher {
   }
 
   // PKCS#7 padding
-  _pad(buffer) {
+  static _pad(buffer) {
     const paddingLength = 16 - (buffer.length % 16);
     const padding = new Uint8Array(paddingLength).fill(paddingLength);
     const paddedBuffer = new Uint8Array(buffer.length + paddingLength);
@@ -86,12 +86,12 @@ class AESCipher {
     return paddedBuffer;
   }
 
-  _unpad(text) {
+  static _unpad(text) {
     const paddingLength = text.charCodeAt(text.length - 1);
     return text.slice(0, -paddingLength);
   }
 
-  _arrayBufferToBase64(buffer) {
+  static _arrayBufferToBase64(buffer) {
     let binary = '';
     const bytes = new Uint8Array(buffer);
     bytes.forEach(byte => {
@@ -100,7 +100,7 @@ class AESCipher {
     return btoa(binary);
   }
 
-  _base64ToArrayBuffer(base64) {
+  static _base64ToArrayBuffer(base64) {
     const binaryString = atob(base64);
     const buffer = new Uint8Array(binaryString.length);
     for (let i = 0; i < binaryString.length; i++) {
