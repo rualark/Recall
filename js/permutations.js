@@ -2,7 +2,7 @@ export function answersHaveDuplicates(permutation, answers) {
   const unique = new Set();
   let aid = 0;
   let hasDuplicates = false;
-  for (let answer of answers) {
+  for (const answer of answers) {
     if (unique.has(answer[permutation[aid]])) {
       hasDuplicates = true;
       break;
