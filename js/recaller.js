@@ -89,6 +89,7 @@ async function checkPermutation(permutation, answers, packed, finished) {
       }
     }
   } catch (error) {
+    // continue regardless of error
   }
   return finished;
 }
