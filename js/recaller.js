@@ -103,6 +103,7 @@ async function scan() {
     const answers = getFirstColumnTexts();
     let filled = true;
 
+    for (const answer of answers) {
       if (answer.length === 0) {
         filled = false;
         break;
