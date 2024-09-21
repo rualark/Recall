@@ -50,7 +50,7 @@ function clickBlock(event) {
 function validate() {
   const answers = getFirstColumnTexts();
   updateUsage(answers);
-  for (let answer of answers) {
+  for (const answer of answers) {
     if (answer.length === 0) {
       return;
     }
@@ -102,7 +102,7 @@ async function scan() {
     const packed = document.getElementById('packed').value.trim();
     const answers = getFirstColumnTexts();
     let filled = true;
-    for (let answer of answers) {
+
       if (answer.length === 0) {
         filled = false;
         break;
