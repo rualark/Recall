@@ -47,7 +47,7 @@ export function groupsAndSecrets(src) {
 }
 
 export function parseGroups(src) {
-  const { groups, secrets } = groupsAndSecrets(src);
+  const { groups, secrets: _ } = groupsAndSecrets(src);
   return groups;
 }
 
