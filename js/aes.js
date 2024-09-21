@@ -35,10 +35,10 @@ class AESCipher {
   async encrypt (plaintext) {
     const salt = crypto.getRandomValues(new Uint8Array(this.saltLength)) // Generate random salt
     const iv = crypto.getRandomValues(new Uint8Array(this.ivLength)) // Generate random IV
-    const key = await this._deriveKey(salt) // Derive key using salt
+    const key = await AESCipher._deriveKey(salt) // Derive key using salt
 
     const enc = new TextEncoder()
-    const paddedPlaintext = this._pad(enc.encode(plaintext)) // Pad the plaintext
+    const paddedPlaintext = AESCipher._pad(enc.encode(plaintext)) // Pad the plaintext
 
     const ciphertext = await crypto.subtle.encrypt(
       { name: 'AES-CBC', iv },
@@ -53,17 +53,17 @@ class AESCipher {
       ...new Uint8Array(ciphertext)
     ])
 
-    return this._arrayBufferToBase64(combinedBuffer)
+    return AESCipher._arrayBufferToBase64(combinedBuffer)
   }
 
   async decrypt (ciphertextBase64) {
-    const combinedBuffer = this._base64ToArrayBuffer(ciphertextBase64)
+    const combinedBuffer = AESCipher._base64ToArrayBuffer(ciphertextBase64)
 
     const salt = combinedBuffer.slice(0, this.saltLength)
     const iv = combinedBuffer.slice(this.saltLength, this.saltLength + this.ivLength)
     const encryptedData = combinedBuffer.slice(this.saltLength + this.ivLength)
 
-    const key = await this._deriveKey(salt) // Derive the key using the same salt
+    const key = await AESCipher._deriveKey(salt) // Derive the key using the same salt
 
     const decryptedBuffer = await crypto.subtle.decrypt(
       { name: 'AES-CBC', iv },
@@ -73,7 +73,7 @@ class AESCipher {
 
     const dec = new TextDecoder()
     const decryptedText = dec.decode(decryptedBuffer)
-    return this._unpad(decryptedText)
+    return AESCipher._unpad(decryptedText)
   }
 
   // PKCS#7 padding
@@ -112,10 +112,10 @@ class AESCipher {
 
 export function encrypt (password, text) {
   const aesCipher = new AESCipher(password)
-  return aesCipher.encrypt(text);
+  return aesCipher.encrypt(text)
 }
 
 export function decrypt (password, encryptedText) {
   const aesCipher = new AESCipher(password)
-  return aesCipher.decrypt(encryptedText);
+  return aesCipher.decrypt(encryptedText)
 }
