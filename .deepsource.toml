@@ -1,14 +1,15 @@
 version = 1
 
+exclude_patterns = [
+  "plugins/**"
+]
+
 [[analyzers]]
 name = "javascript"
 
   [analyzers.meta]
   environment = ["browser"]
 
-  exclude_patterns = [
-    "plugins/**"
-  ]
-
+  
 [[transformers]]
 name = "standardjs"
