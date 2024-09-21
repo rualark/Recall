@@ -101,6 +101,7 @@ if you have multiple groups of associations.
 
 ## Where to store your Recall packed messages
 
+
 If your assiciations are safe (see guidelines for safe associations above), it is safe to store the Recall message
 on all of your disks, storages, clouds, usb flash and giving them to your friends - as only you will be able to decrypt it.
 
