@@ -53,11 +53,11 @@ export function parseGroups(src) {
 
 export function groupsToString(groups) {
   let st = '';
-  for (let group of groups) {
+  for (const group of groups) {
     if (st !== '') {
       st += '---\n\n';
     }
-    for (let pair of group) {
+    for (const pair of group) {
       st += `? ${pair[0]} = ${pair[1]}\n\n`
     }
   }
