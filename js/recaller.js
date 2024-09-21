@@ -84,8 +84,9 @@ async function checkPermutation(permutation, answers, packed, finished) {
         unpack();
       } else {
         document.getElementById('secret').value = decrypted;
-        document.querySelectorAll('.column1').forEach(
-          el => el.style.backgroundColor = '#77ff77');
+        document.querySelectorAll('.column1').forEach(el => {
+          el.style.backgroundColor = '#77ff77';
+        });
       }
     }
   } catch (error) {
