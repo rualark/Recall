@@ -104,7 +104,7 @@ class AESCipher {
     const binaryString = atob(base64)
     const buffer = Uint8Array.from(
       binaryString.split('').map(char => char.charCodeAt(0))
-    );
+    )
     return buffer
   }
 }
