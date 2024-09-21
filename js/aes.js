@@ -35,7 +35,7 @@ class AESCipher {
   async encrypt (plaintext) {
     const salt = crypto.getRandomValues(new Uint8Array(this.saltLength)) // Generate random salt
     const iv = crypto.getRandomValues(new Uint8Array(this.ivLength)) // Generate random IV
-    const key = await AESCipher._deriveKey(salt) // Derive key using salt
+    const key = await this._deriveKey(salt) // Derive key using salt
 
     const enc = new TextEncoder()
     const paddedPlaintext = AESCipher._pad(enc.encode(plaintext)) // Pad the plaintext
@@ -63,7 +63,7 @@ class AESCipher {
     const iv = combinedBuffer.slice(this.saltLength, this.saltLength + this.ivLength)
     const encryptedData = combinedBuffer.slice(this.saltLength + this.ivLength)
 
-    const key = await AESCipher._deriveKey(salt) // Derive the key using the same salt
+    const key = await this._deriveKey(salt) // Derive the key using the same salt
 
     const decryptedBuffer = await crypto.subtle.decrypt(
       { name: 'AES-CBC', iv },
