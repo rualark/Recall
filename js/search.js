@@ -38,7 +38,7 @@ function filterQuestions() {
   const search = document.getElementById('search').value.toLowerCase();
   
   pairs.forEach(pair => {
-    if (pair.children[1].children.length > 0 && search != '') {
+    if (pair.children[1].children.length > 0 && search !== '') {
       pair.style.display = 'none';
     } else {
       pair.style.display = 'flex';
