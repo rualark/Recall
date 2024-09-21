@@ -36,8 +36,15 @@ async function pack () {
   document.getElementById('packed').value = res
 }
 
-document.getElementById('pack').onclick = function () {
+function init () {
+  document.getElementById('packed').onclick = function() {
+    this.select()
+  }
+  document.getElementById('pack').onclick = function () {
+    pack()
+  }
+
   pack()
 }
 
-pack()
+init()
