@@ -66,7 +66,7 @@ export function groupsToString(groups) {
 
 export function updateGroups(groups, answers, permutation) {
   let aid = 0;
-  for (let answer of answers) {
+  for (const answer of answers) {
     groups[0][aid][0] = answer[permutation[aid]];
     aid += 1;
   }
