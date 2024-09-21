@@ -2,11 +2,11 @@
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=rualark_Recall&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=rualark_Recall)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=rualark_Recall&metric=bugs)](https://sonarcloud.io/summary/new_code?id=rualark_Recall)
+[![DeepSource](https://app.deepsource.com/gh/rualark/Recall.svg/?label=active+issues&show_trend=false&token=rlHWezv6AY9K9nfF3vPijtND)](https://app.deepsource.com/gh/rualark/Recall/)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rualark_Recall&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rualark_Recall)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=rualark_Recall&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=rualark_Recall)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=rualark_Recall&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=rualark_Recall)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rualark_Recall&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rualark_Recall)
-
-[![DeepSource](https://app.deepsource.com/gh/rualark/Recall.svg/?label=active+issues&show_trend=false&token=rlHWezv6AY9K9nfF3vPijtND)](https://app.deepsource.com/gh/rualark/Recall/)
 
 [Open Recall](https://rualark.github.io/Recall)
 
