@@ -12,7 +12,7 @@ export function generateColumnsForGroup(group, clickBlock, clickCell) {
   const column2 = document.createElement('div');
   column2.className = 'column2';
 
-  group.forEach((pair, index) => {
+  group.forEach((pair) => {
     // Create an question cell in the zero column
     const pairCell = document.createElement('div');
     pairCell.className = 'pair';
