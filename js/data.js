@@ -27,7 +27,7 @@ export function groupsAndSecrets(src) {
   let secrets = [];
   let pairs = [];
   for (let line of lines) {
-    if (line.trim() == '---') {
+    if (line.trim() === '---') {
       if (pairs.length) {
         groups.push(pairs);
         pairs = [];
