@@ -102,10 +102,9 @@ class AESCipher {
 
   static _base64ToArrayBuffer (base64) {
     const binaryString = atob(base64)
-    const buffer = new Uint8Array(binaryString.length)
-    for (let i = 0; i < binaryString.length; i++) {
-      buffer[i] = binaryString.charCodeAt(i)
-    }
+    const buffer = Uint8Array.from(
+      binaryString.split('').map(char => char.charCodeAt(0))
+    );
     return buffer
   }
 }
