@@ -3,7 +3,7 @@ import { initSearch } from './search.js'
 import { parseGroups, groupsToString, getUrlParam, updateGroups, sortAnswers } from './data.js'
 import { hashSHA256 } from './hash.js'
 import { nextPermutation, answersHaveDuplicates } from './permutations.js'
-import { generateColumnsForGroup, updateUsage, cloneBlock, getFirstColumnTexts } from './ui.js'
+import { generateColumnsForGroup, updateUsage, cloneBlock, getFirstColumnTexts } from './quiz.js'
 
 let selectedBlock = null
 let groups = []
@@ -86,9 +86,8 @@ async function checkPermutation (permutation, answers, packed, finished) {
         unpack()
       } else {
         document.getElementById('secret').value = decrypted
-        document.querySelectorAll('.column1').forEach(el => {
-          el.style.backgroundColor = '#77ff77'
-        })
+        document.querySelector('.column1').style.backgroundColor = '#77ff77'
+        document.querySelector('decrypted-card').style.backgroundColor = '#77ff77'
       }
     }
   } catch (error) {
