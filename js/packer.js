@@ -31,7 +31,7 @@ async function pack() {
     const hash = await hashSHA256(res);
     const date = new Date().toISOString();
     
-    res = 'RECALL:' + b64 + ':' + encrypted + ':' + hash + ':' + date;
+    res = `RECALL:${b64}:${encrypted}:${hash}:${date}`;
   }
   document.getElementById('packed').value = res;
 }
