@@ -73,6 +73,7 @@ async function checkPermutation (permutation, answers, packed, finished) {
   updateGroups(groups, answers, permutation)
   const groups_str = groupsToString(groups)
   const encrypted = packed.split(':')[2]
+  document.getElementById('secret').value = 'Decrypting...'
   try {
     const decrypted = await decrypt(groups_str, encrypted)
     document.getElementById('scan-progress').textContent = 'Found correct combination'
@@ -80,6 +81,7 @@ async function checkPermutation (permutation, answers, packed, finished) {
     if (hash === packed.split(':')[3]) {
       finished = true
       if (decrypted.startsWith('RECALL:')) {
+        document.getElementById('secret').value = 'Decrypted next RECALL message successfully'
         document.getElementById('packed').value = decrypted
         unpack()
       } else {
@@ -90,7 +92,7 @@ async function checkPermutation (permutation, answers, packed, finished) {
       }
     }
   } catch (error) {
-    // continue regardless of error
+    document.getElementById('secret').value = 'Wrong key, could not decrypt. Try to change your answers.'
   }
   return finished
 }
