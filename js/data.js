@@ -54,7 +54,7 @@ export function parseGroups(src) {
 export function groupsToString(groups) {
   let st = '';
   for (let group of groups) {
-    if (st != '') {
+    if (st !== '') {
       st += '---\n\n';
     }
     for (let pair of group) {
