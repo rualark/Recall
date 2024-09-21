@@ -8,7 +8,7 @@ function shufflePairs(groups) {
 
     // Shuffle the second elements
     for (let i = firstElements.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
+      const j = Math.floor(Math.random() * (i + 1));
       [firstElements[i], firstElements[j]] = [firstElements[j], firstElements[i]];
     }
 
