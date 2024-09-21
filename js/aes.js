@@ -112,12 +112,12 @@ class AESCipher {
 
 export async function encrypt (password, text) {
   const aesCipher = new AESCipher(password)
-  const encrypted = aesCipher.encrypt(text);
-  return encrypted;
+  const encrypted = aesCipher.encrypt(text)
+  return encrypted
 }
 
 export async function decrypt (password, encryptedText) {
   const aesCipher = new AESCipher(password)
-  const decrypted = aesCipher.decrypt(encryptedText);
-  return decrypted;
+  const decrypted = aesCipher.decrypt(encryptedText)
+  return decrypted
 }
