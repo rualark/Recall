@@ -51,7 +51,7 @@ function validate() {
   const answers = getFirstColumnTexts();
   updateUsage(answers);
   for (let answer of answers) {
-    if (answer.length == 0) {
+    if (answer.length === 0) {
       return;
     }
   }
@@ -77,7 +77,7 @@ async function checkPermutation(permutation, answers, packed, finished) {
     const decrypted = await decrypt(groups_str, encrypted);
     document.getElementById('scan-progress').textContent = 'Found correct combination';
     const hash = await hashSHA256(decrypted);
-    if (hash == packed.split(':')[3]) {
+    if (hash === packed.split(':')[3]) {
       finished = true;
       if (decrypted.startsWith('RECALL:')) {
         document.getElementById('packed').value = decrypted;
@@ -102,7 +102,7 @@ async function scan() {
     const answers = getFirstColumnTexts();
     let filled = true;
     for (let answer of answers) {
-      if (answer.length == 0) {
+      if (answer.length === 0) {
         filled = false;
         break;
       }
