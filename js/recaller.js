@@ -148,10 +148,10 @@ function init () {
   if (getUrlParam('r')) {
     document.getElementById('packed').value = getUrlParam('r')
   }
-  document.getElementById('packed').onclick = function() {
+  document.getElementById('packed').onclick = function () {
     this.select()
   }
-  
+
   unpack()
   scan()
   initSearch()
