@@ -74,6 +74,8 @@ async function checkPermutation (permutation, answers, packed, finished) {
   const groups_str = groupsToString(groups)
   const encrypted = packed.split(':')[2]
   document.getElementById('secret').value = 'Decrypting...'
+  const column = document.querySelector('.column1')
+  column.style.borderColor = column.style.borderColor === 'black' ? '#ccc' : 'black'
   try {
     const decrypted = await decrypt(groups_str, encrypted)
     document.getElementById('scan-progress').textContent = 'Found correct combination'
@@ -87,7 +89,7 @@ async function checkPermutation (permutation, answers, packed, finished) {
       } else {
         document.getElementById('secret').value = decrypted
         document.querySelector('.column1').style.backgroundColor = '#77ff77'
-        document.querySelector('decrypted-card').style.backgroundColor = '#77ff77'
+        document.getElementById('decrypted-card').style.backgroundColor = '#77ff77'
       }
     }
   } catch (error) {
