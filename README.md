@@ -22,6 +22,8 @@ Recall is not quick - it will take 5-20 minutes to securely input your associati
 and decrypt your secrets (depending on how secure you want it to be).
 Therefore, it's typically used in emergencies, such as when you've forgotten your master passwords.
 
+![Recall usage](https://docs.google.com/drawings/d/1pVqhxQbIO4Niby2ipYO9HIyG3q6tSpu7igIi1SknvAE/pub?w=480&h=360)
+
 ## How it works
 
 Recall transforms your personal memories and associations into a secure key.
