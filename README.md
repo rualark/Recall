@@ -36,7 +36,7 @@ for example matching the names of your favorite games to unique descriptions onl
 These unique associations become the key to unlock your encrypted data, ensuring only you can access it.
 It’s a password method tailored specifically to how your mind naturally works.
 
-To unlock your encrypted data, you create correct pairs of questions and answers:
+To unlock your encrypted data, you find the right answer for each question:
 
 ![Recaller screenshot](https://docs.google.com/drawings/d/1-s89yhQ6oZJR4buUV-AfZiEs5Lfa2pzW7ItOrGOJdbM/pub?w=672&h=504)
 
