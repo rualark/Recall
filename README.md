@@ -36,6 +36,10 @@ for example matching the names of your favorite games to unique descriptions onl
 These unique associations become the key to unlock your encrypted data, ensuring only you can access it.
 It’s a password method tailored specifically to how your mind naturally works.
 
+To unlock your encrypted data, you create correct pairs of questions and answers:
+
+![Recaller screenshot](https://docs.google.com/drawings/d/1-s89yhQ6oZJR4buUV-AfZiEs5Lfa2pzW7ItOrGOJdbM/pub?w=672&h=504)
+
 Did you ever want to send your password to a friend to store it in case you lost it, but you were not sure as it
 increasese the exposure of your password? Now you can encrypt your passwords with your personal associations and
 send it to your friends to make sure you never lose them.
