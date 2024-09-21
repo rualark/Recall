@@ -6,7 +6,7 @@ import {nextPermutation, answersHaveDuplicates} from "./permutations.js";
 import {generateColumnsForGroup, updateUsage, cloneBlock, getFirstColumnTexts} from "./ui.js";
 
 let selectedBlock = null;
-let groups;
+let groups = [];
 let resetScanFlag = true;
 
 function clickCell(event) {
