@@ -1,5 +1,7 @@
 # Recall
 
+[![DeepSource](https://app.deepsource.com/gh/rualark/Recall.svg/?label=active+issues&show_trend=true&token=rlHWezv6AY9K9nfF3vPijtND)](https://app.deepsource.com/gh/rualark/Recall/)
+
 [Open Recall](https://rualark.github.io/Recall)
 
 Recall is an innovative system that secures your sensitive information, like passwords,
