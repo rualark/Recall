@@ -11,6 +11,8 @@
 
 [Open Recall](https://rualark.github.io/Recall)
 
+[Podcast about Recall](https://rualark.github.io/Recall/podcast.html) 🔊🔊🔊
+
 Recall is an innovative system that secures your sensitive information, like passwords,
 by leveraging personal associations unique to your mind instead of traditional authentication methods
 (e.g., passwords, biometrics, or OTP apps).
