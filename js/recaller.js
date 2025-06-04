@@ -4,6 +4,7 @@ import { parseGroups, groupsToString, getUrlParam, updateGroups, sortAnswers } f
 import { hashSHA256 } from './hash.js'
 import { nextPermutation, answersHaveDuplicates } from './permutations.js'
 import { generateColumnsForGroup, updateUsage, cloneBlock, getFirstColumnTexts } from './quiz.js'
+import { initApply } from './apply.js'
 
 let selectedBlock = null
 let groups = []
@@ -156,6 +157,7 @@ function init () {
   unpack()
   scan()
   initSearch()
+  initApply()
 }
 
 init()
